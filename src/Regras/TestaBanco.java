@@ -5,16 +5,25 @@ import DTO.Complex;
 import DTO.Conta;
 import DTO.ContaFilha;
 
+import java.math.BigDecimal;
+
 public class TestaBanco {
     public static void main(String[] args) {
-        System.out.println("****************************************************************");
-        System.out.println("****************************************************************");
-        System.out.println("Começo do programa");
-        ContaFilha contaFilha = new ContaFilha();
-        contaFilha.tabuada(0,0,0);
         Conta conta = new Conta();
-        Complex complex = new Complex();
         Cliente cliente = new Cliente();
-        System.out.println("mudança");
+        Complex complex = new Complex();
+        //objetoclasse1.complexo = objetoclasse2
+        conta.setTitular(new Cliente());
+        conta.getTitular().setOutros(new Complex());
+        //conta.titular = cliente;
+        conta.titular.setEhCorrentista(true);
+        conta.titular.setNumeroDaConta(12);
+        conta.titular.getOutros().setModeloSmartphone("12");
+        System.out.println(conta.titular.getOutros().getModeloSmartphone());
+
+
+
+
+
     }
 }

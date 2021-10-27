@@ -3,49 +3,31 @@ package DTO;
 import java.math.BigDecimal;
 
 public class Cliente {
-    boolean isCasado;
-    String cep;
-    String numeroDaResidencia;
-    BigDecimal salario;
-    Complex nivel2;
+    private boolean ehCorrentista;
 
-    public Complex getNivel2() {
-        return nivel2;
+    public int getNumeroDaConta() {
+        return numeroDaConta;
     }
 
-    public void setNivel2(Complex nivel2) {
-        this.nivel2 = nivel2;
+    public void setNumeroDaConta(int numeroDaConta) {
+        this.numeroDaConta = numeroDaConta;
     }
 
-    public boolean isCasado() {
-        return isCasado;
+    private int numeroDaConta;
+    private Complex outros;
+
+    public boolean getEhCorrentista(){
+        return ehCorrentista;
+    }
+    public void setEhCorrentista(boolean ehCorrentista){
+        this.ehCorrentista = ehCorrentista;
+    }
+    public Complex getOutros() {
+        return outros;
     }
 
-    public void setCasado(boolean casado) {
-        isCasado = casado;
+    public void setOutros(Complex outros) {
+        this.outros = outros;
     }
 
-    public String getCep() {
-        return cep;
-    }
-
-    public void setCep(String cep) {
-        this.cep = cep;
-    }
-
-    public String getNumeroDaResidencia() {
-        return numeroDaResidencia;
-    }
-
-    public void setNumeroDaResidencia(String numeroDaResidencia) {
-        this.numeroDaResidencia = numeroDaResidencia;
-    }
-
-    public BigDecimal getSalario() {
-        return salario;
-    }
-
-    public void setSalario(BigDecimal salario) {
-        this.salario = salario;
-    }
 }

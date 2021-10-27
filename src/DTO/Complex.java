@@ -1,9 +1,9 @@
 package DTO;
 
 public class Complex {
-    String restaurante;
-    String modeloSmartphone;
-    String modeloCarro;
+    private String restaurante;
+    private String modeloSmartphone;
+    private String modeloCarro;
 
     public String getModeloSmartphone() {
         return modeloSmartphone;
