@@ -15,8 +15,5 @@ public class TestaBanco {
         Conta conta = new Conta();
         Complex complex = new Complex();
         Cliente cliente = new Cliente();
-        conta.getTitular().setCep("123");
-        conta.getTitular().getNivel2().setModeloSmartphone("A7 2017");
-        System.out.println(conta.getTitular().getNivel2().getModeloSmartphone());
     }
 }
